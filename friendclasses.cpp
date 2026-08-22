@@ -1,19 +1,19 @@
 #include<iostream>
 using namespace std;
 // forward declaration
-class complex;
+class complexnumber;
 
 class calculator{
         public:
         int add(int a,int b){
             return a+b;
         }
-        int sumrealcomplex(complex o1,complex o2);
+        int sumrealcomplex(complexnumber o1,complexnumber o2);
 };
-class complex{
+class complexnumber{
      int a,b;
      // individually declaring functions as friends
-     friend int calculator:: sumrealcomplex(complex o1,complex o2);
+     friend int calculator:: sumrealcomplex(complexnumber o1,complexnumber o2);
      
      
      public:
@@ -26,14 +26,14 @@ class complex{
      }
      
 };
-int calculator::sumrealcomplex(complex o1,complex o2){
+int calculator::sumrealcomplex(complexnumber o1,complexnumber o2){
 
             return (o1.a+o2.a);
         }
 
 
 int main(){
-     complex c1, c2;
+     complexnumber c1, c2;
 
     c1.setnumber(2, 3);
     c2.setnumber(4, 5);

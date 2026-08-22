@@ -21,7 +21,7 @@ int num;
       friend void add(X,Y);
 };
 void add(X o1,Y o2){
-    cout<<"summing data of X and Y objects gives me"<< o1.data+o2.num
+    cout<<"summing data of X and Y objects gives me"<< o1.data+o2.num;
 }
 int main(){
     X a;

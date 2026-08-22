@@ -3,7 +3,7 @@ using namespace std;
 // forward declaration 
 class c2;
 class c1{
-int val;
+int val1;
 friend void exchange(c1&,c2&);
 public:
 void indata(int a){
@@ -14,6 +14,7 @@ void display(){
 }
 };
 class c2{
+    
 int val2;
 friend void exchange(c1&,c2&);
 public:
@@ -32,8 +33,8 @@ void exchange(c1 &x, c2 &y){
 int main(){
     c1 oc1;
     c2 oc2;
-    oc1 indata(34);
-     oc1 indata(67);
+    oc1.indata(34);
+     oc2.indata(67);
      exchange(oc1,oc2);
      cout<<"the value after exchanging becomes:";
      oc1.display();

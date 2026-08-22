@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
-class employee(){
+class employee{
     int id;
     int salary;
     public:
     void setid(){
         salary=122;
-        cout<<"Enter the id of employee":<<endl;
+        cout<<"Enter the id of employee"<<endl;
         cin>>id;
     }
     void getid(){
