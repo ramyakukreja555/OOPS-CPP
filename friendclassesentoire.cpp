@@ -5,7 +5,7 @@ using namespace std;
 // Forward declaration
 class calculator;
 
-class complex
+class complexnumber
 {
     int a, b;
 
@@ -34,12 +34,12 @@ public:
         return a + b;
     }
 
-    int sumrealcomplex(complex o1, complex o2)
+    int sumrealcomplex(complexnumber o1, complexnumber o2)
     {
         return o1.a + o2.a;
     }
 
-    int sumimaginarycomplex(complex o1, complex o2)
+    int sumimaginarycomplex(complexnumber o1, complexnumber o2)
     {
         return o1.b + o2.b;
     }
@@ -47,7 +47,7 @@ public:
 
 int main()
 {
-    complex c1, c2;
+    complexnumber c1, c2;
 
     c1.setnumber(2, 3);
     c2.setnumber(4, 5);

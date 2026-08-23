@@ -15,7 +15,7 @@ class Employee{
 
     }
     static void getcount(){
-        cout<<"The value of count is:"<<endl;
+        cout<<"The value of count is:"<<count<<endl;
     }
 
 };

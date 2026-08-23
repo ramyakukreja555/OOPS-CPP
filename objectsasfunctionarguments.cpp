@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-class complex{
+class complexnumber{
      int a;
      int b;
      public:
@@ -8,7 +8,7 @@ class complex{
         a=v1;
         b=v2;
      }
-     void setdatabysum(complex o1,complex o2){
+     void setdatabysum(complexnumber o1,complexnumber o2){
         a=o1.a+o2.a;
         b=o1.b+o2.b;
      }
@@ -17,7 +17,7 @@ class complex{
      }
 };
 int main(){
-    complex c1,c2,c3;
+    complexnumber c1,c2,c3;
     c1.setdata(1,2);
     c1.printnumber();
     c2.setdata(3,4);
